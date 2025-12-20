@@ -3,6 +3,12 @@ package mx.com.gm.peliculas.app;
 import java.util.Scanner;
 import mx.com.gm.peliculas.dominio.servicio.CatalogoPeliculasImpl;
 
+/**
+ * Clase principal que ejecuta el catalogo de peliculas
+ * @version 1.0
+ * @author LK Ronald
+ * @see visita https://github.com/LK-Ronald
+ */
 public class Main {
     public static void main(String[] args) {
         CatalogoPeliculasImpl catalogo = new CatalogoPeliculasImpl();
@@ -10,7 +16,7 @@ public class Main {
         int opcion = 0;
 
         do {
-            System.out.println("Bienvenido al catalogo de Peliculas"
+            System.out.print("Bienvenido al catalogo de Peliculas"
                     + "\n1. Iniciar Catalogo peliculas"
                     + "\n2. Agregar pelicula"
                     + "\n3. Listar Peliculas"
