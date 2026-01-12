@@ -1,4 +1,4 @@
-# 🎬 Sistema de Catálogo de Películas
+#  Sistema de Catálogo de Películas
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Maven](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white)
@@ -8,24 +8,24 @@ Un proyecto robusto y elegante desarrollado en **Java** para la gestión de un c
 
 ---
 
-## 📋 Descripción del Proyecto
+##  Descripción del Proyecto
 
 Este mini-proyecto es una aplicación de consola que permite gestionar una colección de películas. Los datos se persisten en un archivo de texto (`peliculas.txt`), asegurando que la información se mantenga entre ejecuciones. El objetivo principal es ilustrar cómo estructurar una aplicación escalable y mantenible utilizando buenas prácticas de POO (Programación Orientada a Objetos).
 
-### ✨ Funcionalidades Principales
+###  Funcionalidades Principales
 
-*   **🆕 Iniciar Catálogo**: Crea o reinicia el archivo de almacenamiento.
-*   **➕ Agregar Película**: Guarda nuevas películas en el catálogo persistente.
-*   **📜 Listar Películas**: Muestra todas las películas almacenadas.
-*   **🔍 Buscar Película**: Encuentra una película específica por nombre ignorando mayúsculas/minúsculas.
+*   ** Iniciar Catálogo**: Crea o reinicia el archivo de almacenamiento.
+*   ** Agregar Película**: Guarda nuevas películas en el catálogo persistente.
+*   ** Listar Películas**: Muestra todas las películas almacenadas.
+*   ** Buscar Película**: Encuentra una película específica por nombre ignorando mayúsculas/minúsculas.
 
 ---
 
-## 🏗️ Arquitectura y Diseño Técnico
+##  Arquitectura y Diseño Técnico
 
 El proyecto sigue una arquitectura modular separada en capas, lo que garantiza el desacoplamiento y facilita el mantenimiento.
 
-### 🧩 Capas del Sistema
+###  Capas del Sistema
 
 1.  **Dominio (`mx.com.gm.peliculas.dominio`)**:
     *   Contiene la lógica de negocio y las "reglas del juego".
@@ -40,16 +40,16 @@ El proyecto sigue una arquitectura modular separada en capas, lo que garantiza e
 3.  **App (`mx.com.gm.peliculas.app`)**:
     *   Punto de entrada (`Main`) que interactúa con el usuario y utiliza los servicios del dominio.
 
-### 🧠 Conceptos Aplicados
+###  Conceptos Aplicados
 
-#### 1. Principios SOLID 💎
+#### 1. Principios SOLID 
 *   **SRP (Single Responsibility Principle)**: Cada clase tiene una responsabilidad única. `Pelicula` solo guarda datos, `AccesoDatosImpl` solo gestiona el archivo, y `CatalogoPeliculasImpl` solo gestiona la lógica de negocio.
 *   **DIP (Dependency Inversion Principle)**: El módulo de alto nivel (`CatalogoPeliculasImpl`) depende de abstracciones (`IAccesoDatos`) y no de implementaciones concretas, lo que facilita el cambio del mecanismo de persistencia en el futuro.
 
-#### 2. Polimorfismo e Interfaces 🧬
+#### 2. Polimorfismo e Interfaces 
 El uso de interfaces como `ICatalogoPeliculas` e `IAccesoDatos` permite que el sistema sea flexible. Podríamos cambiar la implementación de archivo de texto a una base de datos SQL simplemente creando una nueva clase que implemente `IAccesoDatos`, sin tocar nada de la lógica de negocio.
 
-#### 3. Manejo de Excepciones Personalizadas ⚠️
+#### 3. Manejo de Excepciones Personalizadas 
 Se ha implementado una jerarquía de excepciones propias para tener un control granular de los errores:
 *   `AccesoDatosEx` (Padre)
     *   `LecturaDatosEx`
@@ -57,7 +57,7 @@ Se ha implementado una jerarquía de excepciones propias para tener un control g
 
 ---
 
-## 📂 Estructura del Proyecto
+##  Estructura del Proyecto
 
 ```bash
 mx.com.gm.peliculas
@@ -89,7 +89,7 @@ mx.com.gm.peliculas
 
 ---
 
-## 🚀 Cómo Ejecutar
+##  Cómo Ejecutar
 
 1.  Asegúrate de tener **Java** instalado.
 2.  Compila el proyecto.
@@ -105,4 +105,4 @@ Bienvenido al catalogo de Peliculas
 Elige una opcion:
 ```
 
-¡Disfruta gestionando tu colección de películas con un código limpio y profesional! 🍿
+¡Disfruta gestionando tu colección de películas con un código limpio y profesional!
