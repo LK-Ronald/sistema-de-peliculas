@@ -14,10 +14,10 @@ Este mini-proyecto es una aplicación de consola que permite gestionar una colec
 
 ###  Funcionalidades Principales
 
-*   ** Iniciar Catálogo**: Crea o reinicia el archivo de almacenamiento.
-*   ** Agregar Película**: Guarda nuevas películas en el catálogo persistente.
-*   ** Listar Películas**: Muestra todas las películas almacenadas.
-*   ** Buscar Película**: Encuentra una película específica por nombre ignorando mayúsculas/minúsculas.
+*   **Iniciar Catálogo**: Crea o reinicia el archivo de almacenamiento.
+*   **Agregar Película**: Guarda nuevas películas en el catálogo persistente.
+*   **Listar Películas**: Muestra todas las películas almacenadas.
+*   **Buscar Película**: Encuentra una película específica por nombre ignorando mayúsculas/minúsculas.
 
 ---
 
